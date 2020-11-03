@@ -1,0 +1,31 @@
+<form [formGroup]="searchForm">
+
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="name"
+      placeholder="character name"
+    >
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="searchForCharacter()"
+    [disabled]="searchForm.invalid"
+  >
+    Search Characters
+  </button>
+
+  <mat-spinner
+    diameter="40"
+    *ngIf="loading && !(charactersResult | async)"
+  ></mat-spinner>
+</form>
+
+<div class="characters__results">
+  <app-character
+    *ngFor="let char of (charactersResult | async);"
+    [character]="char"
+  ></app-character>
+</div>
