@@ -21,3 +21,11 @@ Ensure you do a `yarn` inside the repo to install all the required dependencies,
 - Fix the functions! Your terminal will be giving you feedback via jest --watch, and will let you know if the functions are working or not. Each function has a hint & a link to the docs for the operator(s) you need to use.
 
 The functions get progressively harder to understand & fix. Try your best.
+
+### Jamie's comments
+
+Considering the type of role I am applying for, this seemed _way_ too easy. So much so that I was second guessing myself.
+
+Eventually I decided that either I have got the answers correct and/or the unit tests need improving.
+
+I've recently started using Jest as part of my role at Metro. It'd be good to get a breakdown of how Jest Marbles works. Unfortunately the link on jest-marbles to learn marbles syntax appears to be broken.
